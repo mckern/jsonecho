@@ -14,9 +14,9 @@ import (
 	"github.com/mckern/pflag"
 )
 
-var versionNumber = "0.0.2"
+var versionNumber string
 var whoami = path.Base(os.Args[0])
-var version = fmt.Sprintf("%s (jsonecho) %s", whoami, versionNumber)
+var version = fmt.Sprintf("%s %s", whoami, versionNumber)
 var host string
 var port string
 
